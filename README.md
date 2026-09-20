@@ -1,4 +1,4 @@
-# 🐾 Wildlife Crime Analytics Dashboard
+# 🐾 AI Wildlife Crime Analytics Dashboard
 
 **Data-driven analysis of wildlife crime trends, hotspots, and conservation insights.**
 
