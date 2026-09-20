@@ -36,10 +36,21 @@ Treemap of product value (ivory, horn, scales, skins...), conservation-status he
 ### 4. Enforcement & Case Outcomes
 Case status trends over time, agency-level seizure vs. arrest comparison, and a value-vs-arrests scatter plot by country.
 
+### 5. Predictive Insights
+A live Random Forest classifier (via Power BI's Python integration) tests whether seizure 
+characteristics — value, product type, region, transport method, enforcement agency — predict 
+arrest outcomes. Model performance was close to random (ROC-AUC 0.57), suggesting arrest 
+likelihood depends on factors beyond seizure data alone — consistent with real-world patterns 
+where investigative capacity and political will often matter more than case specifics. Feature 
+importance analysis showed estimated seizure value and quantity as the strongest (though still 
+weak) predictors.
+
 ## Tools Used
 
 - **Power BI Desktop** — data modeling, DAX measures, dashboard design
 - **DAX** — custom measures for conviction rate, YoY growth, and category-level breakdowns
+- **Python (scikit-learn, pandas)** — Random Forest classifier for arrest prediction, connected 
+  live via Power BI's Python scripting integration (see `ml/arrest_classifier.py`)
 - **Excel / SQL** — used for initial data exploration and validation
 
 ## About the Dataset
